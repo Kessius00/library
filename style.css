@@ -39,13 +39,13 @@ body{
     color: var(--text-color);
     background-color: var(--main-color);
     margin-right: 200px;
+    margin-left: 50px;
 }
 
 
 .header button:hover{
     background-color: var(--main-color-hover);
     margin-right: 200px;
-
 }
 
 .header div{
