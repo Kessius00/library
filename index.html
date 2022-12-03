@@ -14,44 +14,58 @@
     </style>
 </head>
 <body style="font-family: 'Anek Devanagari', sans-serif;">
-    <div class="header">
-        <div>
-            <img src="./img/library-svgrepo-com.svg" alt="Library building icon">
-            <h1>Library</h1>
+    <div class="full-page-grid">
+        <div class="header">
+            <div>
+                <img src="./img/library-svgrepo-com.svg" alt="Library building icon">
+                <h1>Library</h1>
+            </div>
+            <button>Login</button>
         </div>
-        <button>Login</button>
-    </div>
 
-    <div class="sidebar">
-        <h1>Collection</h1>
-        <button class="addBook">Add Book +</button>
-        <div class="line"></div>
-        <div class="amountBooks">
-            Amount of Books
-            <p>23032</p>
+        <div class="book-grid">
+            <div class="bookinfo">
+                <div class="title">Sounds of Solitude</div>
+                <div class="author">author: Patrick Wuhman</div>
+                <div class="pages-read">page: 233</div>
+                <div class="total-pages">total pages: 778</div>
+                <div class="completed">completed: false</div>
+                <button>Edit</button>
+            </div>
+            
+            
         </div>
-        <div class="booksCompleted">
-            Books Completed
-            <p>232</p>
+
+        <div class="sidebar">
+            <h1>Collection</h1>
+            <button class="addBook">Add Book +</button>
+            <div class="line"></div>
+            <div class="amountBooks">
+                Amount of Books
+                <p>23032</p>
+            </div>
+            <div class="booksCompleted">
+                Books Completed
+                <p>232</p>
+            </div>
+            
         </div>
-        
+
+        <!-- <div class="footer">
+            <p>Made By <a href="https://github.com/Kessius00" target="_blank">Kessius</a>!</p>
+        </div> -->
+
+        <!-- <div class="newBookForm">
+            <form action="get">
+                <input type="text" placeholder="Title" id="title">
+                <input type="text" placeholder="Author" id="author">
+                <input type="number" name="totPages" id="totPages">
+                <input type="number" name="completedPages" id="completedPages">
+                <button id="cancel">Cancel</button>
+                <button id="submit" type="submit">Submit</button>
+
+            </form>
+        </div> -->
     </div>
-
-
-    <div class="footer">
-        <p>Made By <a href="https://github.com/Kessius00" target="_blank">Kessius</a>!</p>
-    </div>
-
-    <!-- <div class="newBookForm">
-        <form action="get">
-            <input type="text" placeholder="Title" id="title">
-            <input type="text" placeholder="Author" id="author">
-            <input type="number" name="totPages" id="totPages">
-            <input type="number" name="completedPages" id="completedPages">
-            <button id="cancel">Cancel</button>
-            <button id="submit" type="submit">Submit</button>
-
-        </form>
-    </div> -->
 </body>
 </html>
