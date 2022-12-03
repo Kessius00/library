@@ -162,6 +162,29 @@ h1{
     background-color: var(--main-color-hover);
 }
 
+.backgroundBlur{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(6px);
+    
+
+    z-index: -1;
+}
+
+.newBookForm{
+    position: fixed;
+    top: 20vh;
+    left: 40%;
+
+}
+
+
+
 h2{
     font-size: 2rem;
 }

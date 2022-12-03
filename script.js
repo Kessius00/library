@@ -2,9 +2,18 @@
 // clickable
 const addBookBtn = document.querySelector('.addBook');
 
+const totalForm = document.querySelector('.newBookForm');
 const formCancel = document.querySelector('#cancel');
 const formSubmit = document.querySelector('#submit');
-const
+const titleInput = document.querySelector('#title');
+const authorInput = document.querySelector('#author');
+const completedPagesInput = document.querySelector('#completedPages');
+const totalPagesInput = document.querySelector('#totPages');
+const fullyReadCheckbox = document.querySelector('#fullyRead');
+
+
+
+const editBookInfo = document.querySelector('#editBookInfo');
 
 
 // changable
@@ -12,10 +21,20 @@ const amountOfBooks = document.querySelector('.amountOfBooks p');
 const completedBooks = document.querySelector('.booksCompleted p');
 
 
+formCancel.addEventListener('click', closeTheForm);
+addBookBtn.addEventListener('click', openForm);
 
 
+function closeTheForm() {
+    totalForm.style.display = "none";
+    document.querySelector('.backgroundBlur').style.display = 'none';
 
+  }
 
+function openForm(){
+    totalForm.style.display = 'block';
+    document.querySelector('.backgroundBlur').style.display = 'block';
+}
 
 function Book(title, author, pages, read){
     this.title = title;

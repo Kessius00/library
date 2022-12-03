@@ -30,33 +30,13 @@
                 <div class="pages-read">page: 233</div>
                 <div class="total-pages">total pages: 778</div>
                 <div class="completed">completed: false</div>
-                <button>Edit</button>
+                <button id="editBookInfo">Edit</button>
             </div>
-
-            <div class="newBookForm">
-                <form action="get" id="bookForm">
-                    <h2>What book?</h2>
-                    <input type="text" placeholder="Title" class="title" id="title" required>
-                    <input type="text" placeholder="Author" class="author" id="author" required>
-                    <input type="number" class="completed-pages" name="completedPages" id="completedPages" max="99999999" placeholder="Completed pages" required>
-                    <input type="number" class="total-pages" name="totPages" id="totPages" max="99999999" placeholder="Total pages" required>
-                    <div class="fully-read">
-                        <label for="fully-read">Have you read it fully?</label>
-                        <input type="checkbox" name="fullyRead" id="fullyRead">
-                    </div>
-                    <div>
-                        <button id="cancel">Cancel</button>
-                        <input id="submit" class="submit-button" type="submit"> 
-                    </div>
-
-                    
-
-    
-                </form>
-            </div>
-    
             
         </div>
+
+
+        
 
         <div class="sidebar">
             <h1>Collection</h1>
@@ -73,12 +53,35 @@
             
         </div>
 
+
        
 
 
         <!-- <div class="footer">
             <p>Made By <a href="https://github.com/Kessius00" target="_blank">Kessius</a>!</p>
         </div> -->
+    </div>
+    <div class="newBookForm">
+        <form action="get" id="bookForm">
+            <h2>What book?</h2>
+            <input type="text" placeholder="Title" class="title" id="title" required>
+            <input type="text" placeholder="Author" class="author" id="author" required>
+            <input type="number" class="completed-pages" name="completedPages" id="completedPages" max="99999999" placeholder="Completed pages" required>
+            <input type="number" class="total-pages" name="totPages" id="totPages" max="99999999" placeholder="Total pages" required>
+            <div class="fully-read">
+                <label for="fully-read">Have you read it fully?</label>
+                <input type="checkbox" name="fullyRead" id="fullyRead">
+            </div>
+            <div>
+                <button id="cancel">Cancel</button>
+                <input id="submit" class="submit-button" type="submit"> 
+            </div>
+
+            
+
+
+        </form>
+        <div class="backgroundBlur"></div>
     </div>
 </body>
 </html>
