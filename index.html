@@ -32,7 +32,25 @@
                 <div class="completed">completed: false</div>
                 <button>Edit</button>
             </div>
-            
+
+            <div class="newBookForm">
+                <form action="get" id="bookForm">
+                    <h2>What book?</h2>
+                    <input type="text" placeholder="Title" id="title" required>
+                    <input type="text" placeholder="Author" id="author" required>
+                    <input type="number" name="completedPages" id="completedPages" max="99999999" placeholder="Completed pages" required>
+                    <input type="number" name="totPages" id="totPages" max="99999999" placeholder="Total pages" required>
+                <div>
+                        <button id="cancel">Cancel</button>
+                        <input id="submit" type="submit"> 
+                    </div>
+
+                    
+
+    
+                </form>
+            </div>
+    
             
         </div>
 
@@ -51,20 +69,11 @@
             
         </div>
 
+       
+
+
         <!-- <div class="footer">
             <p>Made By <a href="https://github.com/Kessius00" target="_blank">Kessius</a>!</p>
-        </div> -->
-
-        <!-- <div class="newBookForm">
-            <form action="get">
-                <input type="text" placeholder="Title" id="title">
-                <input type="text" placeholder="Author" id="author">
-                <input type="number" name="totPages" id="totPages">
-                <input type="number" name="completedPages" id="completedPages">
-                <button id="cancel">Cancel</button>
-                <button id="submit" type="submit">Submit</button>
-
-            </form>
         </div> -->
     </div>
 </body>

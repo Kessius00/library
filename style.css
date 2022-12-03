@@ -123,3 +123,45 @@ h1{
     font-size: 1.6rem;
     align-self: center;
 }
+
+#bookForm{
+    background-color: rgb(49, 21, 21);
+
+    padding:10px 30px 10px 30px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+
+    height: 500px;
+
+    color: white;
+
+}
+
+::placeholder{
+    color: white;
+    /* padding-left: 10px; */
+}
+
+#bookForm input{ 
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    padding: 10px;
+}
+
+#bookForm input:focus{
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: var(--main-color-hover);
+}
+
+h2{
+    font-size: 2rem;
+}

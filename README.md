@@ -94,7 +94,6 @@ h1{
     grid-row: 2/3;
     grid-column: 2/3;
     background-color: rgb(164, 83, 83);
-    margin-left: auto;
     color: white;
     padding: 30px;
 
