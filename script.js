@@ -1,4 +1,6 @@
 // constants
+
+const bookGrid = document.querySelector('.book-grid')
 // clickable
 const addBookBtn = document.querySelector('.addBook');
 
@@ -17,19 +19,31 @@ const editBookInfo = document.querySelector('#editBookInfo');
 
 
 // changable
-const amountOfBooks = document.querySelector('.amountOfBooks p');
+const amountOfBooks = document.querySelector('.amountBooks p');
 const completedBooks = document.querySelector('.booksCompleted p');
+
+
+
+console.log(bookGrid.childElementCount)
 
 
 formCancel.addEventListener('click', closeTheForm);
 addBookBtn.addEventListener('click', openForm);
 
 
+function alterBookAmount(){
+    amountOfBooks.textContent = bookGrid.childElementCount;
+    
+}
+
 function closeTheForm() {
     totalForm.style.display = "none";
     document.querySelector('.backgroundBlur').style.display = 'none';
+    alterBookAmount();
 
-  }
+}
+
+
 
 function openForm(){
     totalForm.style.display = 'block';
