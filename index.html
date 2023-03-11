@@ -14,10 +14,31 @@
     <title>Library</title>
 </head>
 <body>
-    <h1>Hi this is a library</h1>
+    <h1 style="font-size: 3rem; padding: 20px;">Hi this is a library</h1>
     <div class="paragr">
         <p>So this is a library</p>
-        <button class="new_book">New book</button>
+        <button class="btn new_book">New book</button>
+    </div>
+    <div class="books-layout"></div>
+    <div class="popUpform" style="border: #222222 dashed 4px;">
+        <div class="form">
+            <form action="./script.js" class="formContainer">
+                <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
+                <div class="forminputs">
+                    <label for="bookName">Bookname</label>
+                    <input type="text" name="BookName" id="BookName" placeholder="Book">
+                    <label for="AuthorName">Authorname</label>
+                    <input type="text" name="AuthorName" id="AuthorName" placeholder="Author">
+                    <label for="pagesRead">Pages_read</label>
+                    <input type="number" name="pagesRead" id="pagesRead" placeholder="Pages">
+                    <label for="didRead">Did_read</label>
+                    <input type="checkbox" name="didRead" id="didRead">
+
+                    <button type="submit" class="btn submitBtn">Submit</button>
+                    <button class="btn cancelBtn" style="background-color: #fe0000; border: none;">X</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
