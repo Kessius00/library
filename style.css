@@ -1,15 +1,19 @@
 :root{
-    --main-color: rgba(144, 94, 73, 0.198);
-    --main-color-hover: rgba(144, 94, 73, 0.647);
-    --text-color: rgb(0, 3, 60); 
-    --sidebar-color: rgb(164, 83, 83);  
+    font-family: 'Roboto Mono', monospace;
 }
 
 ::selection{
     background-color: black;
     color: white;
+
 }
 
 h1 {
     font-size: 3rem;
+    padding: 20px;
+
+}
+
+p{
+    margin-left: 20px;
 }
