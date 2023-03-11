@@ -1,4 +1,5 @@
 :root{
+    --main-font: 'Roboto Mono', monospace;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -14,6 +15,27 @@ h1 {
 
 }
 
-p{
-    margin-left: 20px;
+.paragr{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.new_book{
+    padding: 10px 20px;
+    background-color: var(--whitecolor);
+    border: #000000 solid 3px;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+.new_book:hover{
+    background-color: #eeeeee;
+}
+
+.new_book:active{
+    background-color: #777777;
 }
