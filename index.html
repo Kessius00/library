@@ -17,25 +17,30 @@
     <h1 style="font-size: 3rem; padding: 20px;">Hi this is a library</h1>
     <div class="paragr">
         <p>So this is a library</p>
-        <button class="btn new_book">New book</button>
+        <button class="btn new_book" onclick="openForm()">New book</button>
     </div>
     <div class="books-layout"></div>
-    <div class="popUpform" style="border: #222222 dashed 4px;">
+    <div class="popUpform" style="display: none; border: #222222 dashed 4px;" id="popUpform">
         <div class="form">
-            <form action="./script.js" class="formContainer">
-                <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
-                <div class="forminputs">
-                    <label for="bookName">Bookname</label>
-                    <input type="text" name="BookName" id="BookName" placeholder="Book">
-                    <label for="AuthorName">Authorname</label>
-                    <input type="text" name="AuthorName" id="AuthorName" placeholder="Author">
-                    <label for="pagesRead">Pages_read</label>
-                    <input type="number" name="pagesRead" id="pagesRead" placeholder="Pages">
-                    <label for="didRead">Did_read</label>
-                    <input type="checkbox" name="didRead" id="didRead">
+            <form action="./img/library-svgrepo-com.svg" class="formContainer" id="formNewBook">
+                <div class="topForm">
+                    <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
+                    <button class="btn cancel" onclick="closeForm()" style="border: none; width: 60px;">X</button>
+                </div>
 
-                    <button type="submit" class="btn submitBtn">Submit</button>
-                    <button class="btn cancelBtn" style="background-color: #fe0000; border: none;">X</button>
+                <div class="forminputs">
+
+                    <label for="bookName">Bookname</label>
+                    <input type="text" name="BookName" id="BookName" placeholder="The Catcher in the Rye">
+                    <label for="AuthorName">Authorname</label>
+                    <input type="text" name="AuthorName" id="AuthorName" placeholder="J.D. Salinger">
+                    <label for="pagesRead">Pages_read</label>
+                    <input type="number" name="pagesRead" id="pagesRead" placeholder="25">
+                    <div class="checkbox">
+                        <label for="didRead">Did_read?</label>
+                        <input type="checkbox" name="didRead" id="didRead">
+                    </div>
+                    <button type="submit" form="formNewBook" class="btn submitBtn">Submit</button>                
                 </div>
             </form>
         </div>

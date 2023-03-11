@@ -42,3 +42,13 @@
     align-items: center;
     gap: 10px;
 }
+
+.topForm{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cancel:hover{
+    background-color: #fe0000;
+}
