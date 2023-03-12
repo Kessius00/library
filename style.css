@@ -52,3 +52,20 @@
 .cancel:hover{
     background-color: #fe0000;
 }
+
+#popUpform{
+    width: min(700px, 60vw);
+    padding-bottom: 30px;
+    margin:auto;
+    margin-top: 20vh;
+
+    
+}
+
+input[type="text"], input[type="number"]{
+    width: min(250px, 30%);
+    height: 22px;
+    border: black solid 1px;
+    border-radius: 2px;
+    background-color: #eeeeee;
+}

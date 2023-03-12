@@ -14,18 +14,22 @@
     <title>Library</title>
 </head>
 <body>
-    <h1 style="font-size: 3rem; padding: 20px;">Hi this is a library</h1>
-    <div class="paragr">
-        <p>So this is a library</p>
-        <button class="btn new_book" onclick="openForm()">New book</button>
+
+    <div class="middlepage" id="middlepage">
+        <h1 style="font-size: 3rem; padding: 20px;">Hi this is a library</h1>
+        <div class="paragr">
+            <p>So this is a library</p>
+            <button class="btn new_book" onclick="openForm()">New book</button>
+        </div>
+        <div class="books-layout"></div>
     </div>
-    <div class="books-layout"></div>
+
     <div class="popUpform" style="display: none; border: #222222 dashed 4px;" id="popUpform">
         <div class="form">
-            <form action="./img/library-svgrepo-com.svg" class="formContainer" id="formNewBook">
+            <form class="formContainer" id="formNewBook">
                 <div class="topForm">
                     <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
-                    <button class="btn cancel" onclick="closeForm()" style="border: none; width: 60px;">X</button>
+                    <button class="btn cancel" onclick="closeForm()" style="border: none; width: 60px;">x</button>
                 </div>
 
                 <div class="forminputs">
@@ -40,7 +44,7 @@
                         <label for="didRead">Did_read?</label>
                         <input type="checkbox" name="didRead" id="didRead">
                     </div>
-                    <button type="submit" form="formNewBook" class="btn submitBtn">Submit</button>                
+                    <button type="submit" form="formNewBook" class="btn submitBtn" style="margin-top:30px;">Submit</button>                
                 </div>
             </form>
         </div>

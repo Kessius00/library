@@ -1,17 +1,16 @@
 
 
-const newBtn = document.getElementsByClassName('new_book');
 
 
 function openForm(){
     document.getElementById("popUpform").style.display = 'block';
+    document.getElementById('middlepage').style.display = 'none';
 }
-
-
-// newBtn.addEventListener('click', openForm());
 
 
 
 function closeForm(){
     document.getElementById('popUpform').style.display = 'none';
+    document.getElementById('middlepage').style.display = 'block';
+
 }
