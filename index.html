@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -112,3 +113,72 @@
     </div>
   </body>
 </html>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <!-- Adding fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+
+    <div class="middlepage" id="middlepage">
+        <div class="toppage">
+            <h1 style="font-size: 3rem; padding: 20px;">Hi this is a library</h1>
+            <div class="paragr">
+                <p>So this is a library</p>
+                <button class="btn new_book" onclick="openForm()">New book</button>
+            </div>
+        </div>
+        <div class="booksLayout">
+            <div class="book">
+                book1
+            </div>
+            
+
+            
+
+
+        </div>
+        <div class="footer" >
+            made by<a style="color: black; margin-left: 0.8rem;" href="https://github.com/Kessius00"> Kessius</a>
+        </div>
+    </div>
+
+    <div class="popUpform" style="display: none; border: #222222 dashed 4px;" id="popUpform">
+        <div class="form">
+            <form action='./script.js' class="formContainer" id="formNewBook">
+                <div class="topForm">
+                    <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
+                    <button class="btn cancel" onclick="closeForm()" style="border: none; width: 60px;">x</button>
+                </div>
+
+                <div class="forminputs">
+
+                    <label for="bookName">Bookname</label>
+                    <input type="text" name="BookName" id="BookName" placeholder="The Catcher in the Rye">
+                    <label for="AuthorName">Authorname</label>
+                    <input type="text" name="AuthorName" id="AuthorName" placeholder="J.D. Salinger">
+                    <label for="pagesRead">Pages_read</label>
+                    <input type="number" name="pagesRead" id="pagesRead" placeholder="25">
+                    <div class="checkbox">
+                        <label for="didRead">Did_read?</label>
+                        <input type="checkbox" name="didRead" id="didRead">
+                        <span class="checkmark"></span>
+                    </div>
+                    <button type="submit" form="formNewBook" class="btn submitBtn" style="margin-top:30px;">Submit</button>                
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794

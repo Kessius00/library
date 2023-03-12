@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --main-color: rgba(144, 94, 73, 0.198);
   --main-color-hover: rgba(144, 94, 73, 0.647);
@@ -18,12 +19,23 @@ body {
 .full-page-grid {
   height: 100vh;
   width: 100vw;
+=======
+:root{
+    --main-font: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+}
+
+::selection{
+    background-color: black;
+    color: white;
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794
 
   display: grid;
   grid-template-columns: 1fr minmax(300px, 20%);
   grid-template-rows: 100px 1fr;
 }
 
+<<<<<<< HEAD
 .header {
   grid-column: 1/3;
   grid-row: 1/2;
@@ -176,3 +188,95 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+=======
+.paragr{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: var(--whitecolor);
+    border: #000000 solid 3px;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+.new_book{
+    padding: 10px 20px;
+}
+
+.new_book:hover{
+    background-color: #eeeeee;
+}
+
+.new_book:active{
+    background-color: #777777;
+}
+
+.forminputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.topForm{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cancel:hover{
+    background-color: #fe0000;
+}
+
+#popUpform{
+    width: min(700px, 60vw);
+    padding-bottom: 30px;
+    margin:auto;
+    margin-top: 20vh;
+
+    
+}
+
+input[type="text"], input[type="number"]{
+    width: min(250px, 30%);
+    height: 22px;
+    border: black solid 1px;
+    border-radius: 2px;
+    background-color: #eeeeee;
+}
+
+.booksLayout{
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 50%));
+}
+
+
+/* input[type="checkbox"]{
+    height: 0;
+    width: 0;
+} */
+
+
+.footer{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#middlepage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794

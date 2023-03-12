@@ -2,6 +2,7 @@
 
 Making a editable booklist using objects
 
+<<<<<<< HEAD
 :root{
 --main-color: rgba(144, 94, 73, 0.198);
 --main-color-hover: rgba(144, 94, 73, 0.647);
@@ -152,3 +153,9 @@ justify-content: space-between;
 /_ padding: 50px; _/
 
 }
+=======
+
+## things yet to do
+- Make form do checks if it's a number or if things are filled in
+- make form put local data in main page
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794

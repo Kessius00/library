@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // constants
 
 const bookGrid = document.querySelector(".book-grid");
@@ -12,9 +13,16 @@ const authorInput = document.querySelector("#author");
 const completedPagesInput = document.querySelector("#completedPages");
 const totalPagesInput = document.querySelector("#totPages");
 const fullyReadCheckbox = document.querySelector("#fullyRead");
+=======
+
+
+const submit = document.querySelector(".submitBtn");
+const cancel = document.querySelector(".cancel");
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794
 
 const editBookInfo = document.querySelector("#editBookInfo");
 
+<<<<<<< HEAD
 // changable
 const amountOfBooks = document.querySelector(".amountBooks p");
 const completedBooks = document.querySelector(".booksCompleted p");
@@ -62,14 +70,65 @@ Book.prototype.info = function () {
     this.haveRead()
   );
 };
+=======
+function formLeave(event){
+    event.preventDefault();
+}
+
+submit.addEventListener('click', formLeave);
+cancel.addEventListener('click', formLeave);
+
+function openForm(){
+    document.getElementById("popUpform").style.display = 'block';
+    document.getElementById('middlepage').style.display = 'none';
+}
+
+function closeForm(){
+    document.getElementById('popUpform').style.display = 'none';
+    document.getElementById('middlepage').style.display = 'block';
+}
+
+
+// actual functionality of the main idea
+const booksLayout = document.querySelector('.booksLayout');
+const newDiv = document.createElement('div');
+submit.addEventListener('click', addBookToLibrary);
+
+
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794
 
 const Hobbit = new Book("The Hobbit", "Tolkien", 208, false);
 
 let myLibrary = [];
 
+<<<<<<< HEAD
 function addBookToLibrary() {}
+=======
+function Book() {
+  // the constructor...
 
-// nice form function: the form reset function (form.reset()) - to reset the form
-// create a formData object, iterate over it with forof loop
+}
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794
 
+
+booksLayout.appendChild(newDiv);
+
+<<<<<<< HEAD
 addBookBtn.addEventListener("click", () => {});
+=======
+
+function addBookToLibrary() {
+  // do stuff here
+    let newBook = newDiv;
+    newBook.textContent = 'bbook 1';
+    
+    myLibrary.push(newBook)
+
+    for (i in myLibrary){
+        booksLayout.appendChild(i)
+    }
+}   
+
+
+submit.addEventListener('click', addBookToLibrary)
+>>>>>>> a7305443abcd35cb75fde4485519795d22bb9794
