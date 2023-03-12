@@ -24,23 +24,17 @@
             </div>
         </div>
         <div class="booksLayout">
-            <div class="book">
-                book1
-            </div>
-            
-
-            
-
-
+            <div class="book"></div>
         </div>
         <div class="footer" >
-            made by<a style="color: black; margin-left: 0.8rem;" href="https://github.com/Kessius00"> Kessius</a>
+            made by<a style="color: black; margin-left: 0.8rem;" target="_blank" href="https://github.com/Kessius00"> Kessius</a>
         </div>
     </div>
 
     <div class="popUpform" style="display: none; border: #222222 dashed 4px;" id="popUpform">
         <div class="form">
-            <form action='./script.js' class="formContainer" id="formNewBook">
+            
+            <form action="./script.js" class="formContainer" id="formNewBook">
                 <div class="topForm">
                     <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
                     <button class="btn cancel" onclick="closeForm()" style="border: none; width: 60px;">x</button>
@@ -49,7 +43,7 @@
                 <div class="forminputs">
 
                     <label for="bookName">Bookname</label>
-                    <input type="text" name="BookName" id="BookName" placeholder="The Catcher in the Rye">
+                    <input type="text" name="bookName" id="BookName" placeholder="The Catcher in the Rye">
                     <label for="AuthorName">Authorname</label>
                     <input type="text" name="AuthorName" id="AuthorName" placeholder="J.D. Salinger">
                     <label for="pagesRead">Pages_read</label>
@@ -57,7 +51,6 @@
                     <div class="checkbox">
                         <label for="didRead">Did_read?</label>
                         <input type="checkbox" name="didRead" id="didRead">
-                        <span class="checkmark"></span>
                     </div>
                     <button type="submit" form="formNewBook" class="btn submitBtn" style="margin-top:30px;">Submit</button>                
                 </div>
