@@ -24,23 +24,34 @@ function closeForm(){
 
 // actual functionality of the main idea
 const booksLayout = document.querySelector('.booksLayout');
+const newDiv = document.createElement('div');
+submit.addEventListener('click', addBookToLibrary);
 
 
 
-let myLibrary = ['<div>hoi</div>'];
+
+let myLibrary = [];
 
 function Book() {
   // the constructor...
 
 }
 
+
+booksLayout.appendChild(newDiv);
+
+
 function addBookToLibrary() {
   // do stuff here
-  for(i in myLibrary){
-      booksLayout.appendChild(i)
-      
-  }
-}
+    let newBook = newDiv;
+    newBook.textContent = 'bbook 1';
+    
+    myLibrary.push(newBook)
+
+    for (i in myLibrary){
+        booksLayout.appendChild(i)
+    }
+}   
 
 
 submit.addEventListener('click', addBookToLibrary)

@@ -70,7 +70,32 @@ input[type="text"], input[type="number"]{
     background-color: #eeeeee;
 }
 
+.booksLayout{
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 50%));
+}
+
+
 /* input[type="checkbox"]{
     height: 0;
     width: 0;
 } */
+
+
+.footer{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#middlepage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
