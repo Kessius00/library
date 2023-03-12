@@ -3,6 +3,10 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+body{
+    height: auto;
+}
+
 ::selection{
     background-color: black;
     color: white;
@@ -91,32 +95,27 @@ input[type="text"], input[type="number"]{
 
 
 .footer{
-    padding: 30px;
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
 }
 
 #middlepage{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
 }
 
-.haveReadYes{
-    background-color: rgba(172, 255, 47, 0.379);
-}
-
-
-.haveReadNo{
-    background-color: #fe000057;
-}
 
 .book{
-    background-color: #eee;
-    border: #777777 dashed 2px;
+    background-color: #eeeeee72;
+    border: #999999 dashed 2px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -128,7 +127,28 @@ input[type="text"], input[type="number"]{
 
 .book button {
     padding: 5px 10px;
-    border: #000000 solid 2px;
-    border-radius: 4px;
+    border: #000000 solid 1px;
+    border-radius: 1px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+
+
+.haveReadYes{
+    background-color: rgba(172, 255, 47, 0.379);
+}
+
+.haveReadNo{
+    background-color: #fe000057;
+}
+
+.haveReadYes:hover{
+    background-color: rgba(238, 255, 47, 0.379);
+}
+
+.haveReadNo:hover{
+    background-color: rgba(238, 255, 47, 0.379);
+}

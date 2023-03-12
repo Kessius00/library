@@ -16,7 +16,6 @@ const submit = document.querySelector(".submitBtn");
 const cancel = document.querySelector(".cancel");
 const form = document.querySelector('#formNewBook');
 
-const Hobbit = new Book("The Hobbit", "Tolkien", 208, false);
 
 cancel.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -31,7 +30,7 @@ function Book(title, author, pages, read) {
 };
 
 
-let myLibrary = [Hobbit];
+let myLibrary = [];
 
 
 form.addEventListener('submit', (e) => {
@@ -47,7 +46,6 @@ form.addEventListener('submit', (e) => {
     let book = new Book(bookName, authorName, pagesRead, didRead);
     myLibrary.push(book);
 
-    console.log(myLibrary);
 
     closeForm();
     
@@ -87,36 +85,32 @@ function addBookToLibrary() {
         } else {
             haveReadToggle.classList.toggle('haveReadNo');
             haveReadToggle.textContent = 'not yet read';
-        }
+        };
         
         gridItem.appendChild(pages);
         gridItem.appendChild(haveReadToggle);
         gridItem.appendChild(bookRemove);
-        
 
-
-        
         booksLayout.appendChild(gridItem);
+
+        bookRemove.addEventListener('click', ()=>{
+            myLibrary.pop()
+            booksLayout.removeChild(gridItem);
+        });
+
+        haveReadToggle.addEventListener('click', ()=>{
+            if (book.read == true){
+            book.read = false;
+            haveReadToggle.classList.toggle('haveReadYes');
+            haveReadToggle.classList.toggle('haveReadNo');
+            haveReadToggle.textContent = 'not yet read';
+        } else {
+            book.read = true;
+            haveReadToggle.classList.toggle('haveReadNo');
+            haveReadToggle.classList.toggle('haveReadYes');
+            haveReadToggle.textContent = 'have read';
+        };
+        });
 
     }
 };
-
-
-
-
-
-// haveReadToggle.addEventListener('click', updateReadStatus);
-
-
-// function updateReadStatus(){
-//     haveReadToggle.classList.toggle('haveReadYes');
-//     haveReadToggle.classList.toggle('haveReadNo');
-
-// };
-
-
-
-
-
-// create a formData object, iterate over it with forof loop
-
