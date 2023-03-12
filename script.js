@@ -66,7 +66,7 @@ function addBookToLibrary() {
         let gridItem = document.createElement('div');
 
         gridItem.classList.add('book');
-        gridItem.textContent = `${book.title} by ${book.author}`;
+        gridItem.textContent = `'${book.title}' by ${book.author}`;
 
 
         let pages = document.createElement('div');
