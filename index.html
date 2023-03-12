@@ -26,7 +26,7 @@
 
     <div class="popUpform" style="display: none; border: #222222 dashed 4px;" id="popUpform">
         <div class="form">
-            <form class="formContainer" id="formNewBook">
+            <form action='./script.js' class="formContainer" id="formNewBook">
                 <div class="topForm">
                     <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
                     <button class="btn cancel" onclick="closeForm()" style="border: none; width: 60px;">x</button>
@@ -43,6 +43,7 @@
                     <div class="checkbox">
                         <label for="didRead">Did_read?</label>
                         <input type="checkbox" name="didRead" id="didRead">
+                        <span class="checkmark"></span>
                     </div>
                     <button type="submit" form="formNewBook" class="btn submitBtn" style="margin-top:30px;">Submit</button>                
                 </div>

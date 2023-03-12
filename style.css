@@ -69,3 +69,8 @@ input[type="text"], input[type="number"]{
     border-radius: 2px;
     background-color: #eeeeee;
 }
+
+/* input[type="checkbox"]{
+    height: 0;
+    width: 0;
+} */
