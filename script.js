@@ -21,12 +21,17 @@ cancel.addEventListener('click', (e)=>{
     e.preventDefault();
 });
 
+class Book{
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+    haveReadToggle(){
+        this.read = !read;
+    }
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
 };
 
 
@@ -43,6 +48,7 @@ form.addEventListener('submit', (e) => {
     const pagesRead = document.querySelector('#pagesRead').value;
     const didRead = document.querySelector('#didRead').checked;
 
+    // OBJECT CREATION
     let book = new Book(bookName, authorName, pagesRead, didRead);
     myLibrary.push(book);
 
