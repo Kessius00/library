@@ -20,7 +20,7 @@
             <h1 style="font-size: 3rem; padding: 20px;">Hi this is a library</h1>
             <div class="paragr">
                 <p>So this is a library</p>
-                <button class="btn new_book" onclick="openForm()">New book</button>
+                <button class="btn new_book">New book</button>
             </div>
         </div>
         <div class="booksLayout">
@@ -33,7 +33,7 @@
     <div class="popUpform" style="display: none; border: #222222 dashed 4px;" id="popUpform">
         <div class="form">
             
-            <form action="./script.js" class="formContainer" id="formNewBook">
+            <form action="./script.js" class="formContainer" id="formNewBook" novalidate>
                 <div class="topForm">
                     <h2 style="font-size: 2rem; padding: 10px;">What book?</h2>
                     <button class="btn cancel" onclick="closeForm()" style="border: none; width: 60px;">x</button>
@@ -42,17 +42,18 @@
                 <div class="forminputs">
 
                     <label for="bookName">Bookname</label>
-                    <input type="text" name="bookName" id="BookName" placeholder="The Catcher in the Rye">
+                    <input type="text" name="bookName" id="BookName" placeholder="The Catcher in the Rye" required>
                     <label for="AuthorName">Authorname</label>
-                    <input type="text" name="AuthorName" id="AuthorName" placeholder="J.D. Salinger">
+                    <input type="text" name="AuthorName" id="AuthorName" placeholder="J.D. Salinger" required>
                     <label for="pagesRead">Pages_read</label>
-                    <input type="number" name="pagesRead" id="pagesRead" placeholder="25">
+                    <input type="number" name="pagesRead" id="pagesRead" placeholder="25" required>
                     <div class="checkbox">
                         <label for="didRead">Did_read?</label>
                         <input type="checkbox" name="didRead" id="didRead">
                     </div>
                     <button type="submit" form="formNewBook" class="btn submitBtn" style="margin-top:30px;">Submit</button>                
                 </div>
+                <div class="error-message">Please fill in all the fields!</div>
             </form>
         </div>
     </div>
